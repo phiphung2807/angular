@@ -1,21 +1,22 @@
 import { Component } from '@angular/core';
+import { IProduct } from './interfaces/product';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'Angular';
-  myName: string = "Phung Viet Phi";
-  myAge: number = 20;
-  myStatus: boolean = true;
-  myInfo: { name: string, age: number } = {
-    name: "Phung Viet Phi",
-    age: 20
-  };
+  products: IProduct[] = [
+    { id: 1, name: 'San pham A', price: 100, img: 'img' },
+    { id: 2, name: 'San pham B', price: 200, img: 'img' },
+    { id: 3, name: 'San pham C', price: 100, img: 'img' },
+    { id: 4, name: 'San pham D', price: 200, img: 'img' },
+    { id: 5, name: 'San pham E', price: 100, img: 'img' },
+    { id: 6, name: 'San pham F', price: 200, img: 'img' },
+  ];
 
-  showInfo(name: string) {
-    return `My name is ${name ? name : this.myName} and I'm ${this.myAge} years old`;
+  onHandleRemove(id: any) {
+    this.products = this.products.filter((item) => item.id !== id);
   }
 }
