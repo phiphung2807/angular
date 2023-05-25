@@ -14,6 +14,7 @@ export class AppComponent {
     { id: 4, name: 'San pham D', price: 200, img: 'img' },
     { id: 5, name: 'San pham E', price: 100, img: 'img' },
     { id: 6, name: 'San pham F', price: 200, img: 'img' },
+    { id: 7, name: 'San pham G', price: 200, img: 'img' },
   ];
 
   onHandleRemove(id: any) {

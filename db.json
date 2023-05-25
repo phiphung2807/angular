@@ -9,18 +9,8 @@
     {
       "id": "3",
       "name": "Product B",
-      "price": 200,
+      "price": 2000,
       "img": "https://picsum.photos/200/200"
-    },
-    {
-      "name": "Sản phẩm C",
-      "price": 300,
-      "id": "gjBRj9k"
-    },
-    {
-      "name": "",
-      "price": 0,
-      "id": "K2yn9W8"
     }
   ]
 }
